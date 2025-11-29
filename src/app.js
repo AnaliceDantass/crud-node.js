@@ -1,13 +1,16 @@
-const express = require('express') // importando o express
-const app = express() // criação da aplicação
-const port = 3000 //definindo a porta
+const express = require('express')
+const path = require('path')
 
-//criar rota padrão ou raiz
+const app = express() 
+const port = 3000 
+
+app.use(express.static('public'))
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
+
 app.get('/',(req,res)=>{
-    res.send('Olá :)!')
+    res.sendFile(path.join(__dirname,'index.html'))
 })
-
-// executar a porta 3000
 
 app.listen(port,()=>{
     console.log(`servidor rodando no endereço http://localhost:${port}`)
