@@ -15,5 +15,14 @@ app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'index.html'))
 })
 
-export default app
+app.post('/api/login',(req,res)=>{
+    const {username,password} = req.body        
 
+    if(username === 'Admin' && password === '@adminVittaPrime!'){
+        res.json({message: 'Usuário autenticado!'})
+    } else {
+        res.status(401).json({message: 'Erro de autenticação'})
+    }      
+})
+
+export default app
