@@ -12,3 +12,5 @@ Ainda nessa aula, pude importar o Express, criar minha primeira API, e definir a
 
 
 # 💻 [🔗 Aula 03: Criar rotas GET com Express, refatorar código e extensão JSON Viewer](https://jornadadodev.com.br/cursos/back-end/nodejs/criar-rotas-get-com-express-refatorar-codigo-extensao-json-viewer)
+
+📚 Nessa aula o ensino voltado a criação de rotas com Express foi crucial para a definição de como a aplicação responderá a requisições HTTP vindas do usuário. Nela, pude aprender como criar um servidor utilizando o "server.js", juntamente com a insstalação do Express. E, além disso, pude aprimorar a organização dos meus códigos na pasta criada, visando a estruturação da minha API.
